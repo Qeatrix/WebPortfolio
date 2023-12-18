@@ -229,7 +229,7 @@ header > div > a > button:hover:not(.active-header-button) {
   border: none;
   border-radius: 15px;
   background-color: white;
-  outline: 2px solud transparent;
+  outline: 2px solid transparent;
   scale: 1;
   transition: scale 0.2s;
 }
