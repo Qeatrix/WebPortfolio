@@ -1,0 +1,485 @@
+:root {
+  --header-height: 75px;
+}
+
+@font-face {
+  font-family: "San Francisco Normal";
+  font-weight: 400;
+  src: url("https://raw.githubusercontent.com/Qeatrix/StylishhPortfolio/main/assets/fonts/SFProDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://raw.githubusercontent.com/Qeatrix/StylishhPortfolio/main/assets/fonts/SFProDisplay-Medium.ttf");
+}
+
+body {
+  color: white;
+  background-color: #070707;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "San Francisco";
+  scroll-behavior: smooth;
+}
+
+button {
+  font-family: "San Francisco";
+}
+
+#indicators {
+  height: 250px;
+  width: 5px;
+  position: fixed;
+  top: calc(50% - 100px);
+  right: 30px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+#indicators > div {
+  width: 5px;
+  border-radius: 10px;
+}
+
+#indicators > div:not(.indicator-selected) {
+  height: 40px;
+  background-color: #818181;
+}
+
+.indicator-selected {
+  height: 100px;
+  background-color: #FFFFFF;
+}
+
+header {
+  display: flex;
+  height: var(--header-height);
+  width: 100vw;
+  position: fixed;
+  background: rgba(7, 7, 7, 0.4);
+  backdrop-filter: blur(10.5px);
+  opacity: 0;
+  z-index: 2;
+}
+
+header > div {
+  margin: auto;
+}
+
+header > div > a > button {
+  height: calc(var(--header-height) - 30px);
+  margin: 0 10px;
+  padding: 1px 20px;
+  color: white;
+  background-color: #000;
+  border: none;
+  outline: 2px solid transparent;
+  border-radius: 20px;
+  font-size: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s outline;
+}
+
+header > div > a > button2{
+  text-decoration: none;
+}
+
+header > div > a > button:hover:not(.active-header-button) {
+  outline: 2px solid white;
+  transition: 0.2s outline;
+}
+
+.active-header-button {
+  color: black;
+  background-color: white;
+}
+
+.section {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.section:not(#welcome-screen) {
+  height: max-content;
+  min-height: 100vh;
+  margin-top: 150px;
+}
+
+.headers-container {
+  margin: auto;
+}
+
+#welcome-screen > div > h1 {
+  width: 772px;
+  font-size: 65px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: calc(50% - 130px);
+  left: calc(50% - 350px);
+}
+
+.header-normal {
+  z-index: 2;
+}
+
+.header-shadow {
+  filter: blur(20px);
+  color: black;
+  z-index: 1;
+}
+
+.header-gradient {
+  scale: 2.2;
+  background: linear-gradient(to bottom right, #0100EC, #FB36F4);
+  filter: blur(20px);
+  mix-blend-mode: multiply;
+  z-index: 0;
+}
+
+#welcome-screen > div:not(.headers-container) {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(0deg, rgb(7, 7, 7) 2%, rgba(255, 255, 255, 0) 12%);
+}
+
+#projects-screen {
+  display: grid;
+  height: max-content;
+  width: max-content;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, auto);  /* 3 columns */
+  grid-template-rows: repeat(3, auto);
+  gap: 75px;
+}
+
+.project-container {
+  height: 364px;
+  width: 425px;
+  padding: 25px;
+  border: 2px solid rgba(154, 153, 150, 0.28);
+  border-radius: 25px;
+  background: rgba(154, 153, 150, 0.07);
+  backdrop-filter: blur(10.5px);
+}
+
+.project-info {
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+
+.project-icon-bg {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.project-icon-bg > img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  scale: 0.9;
+}
+
+.project-info > h2 {
+  display: inline-block;
+  max-height: 100px;
+  margin: auto 20px;
+  font-size: 35px;
+  vertical-align: middle;
+}
+
+.project-container > p {
+  height: 135px;
+  width: 100%;
+  font-family: "San Francisco Normal";
+  font-size: 22px;
+}
+
+.project-status {
+  display: flex;
+  margin: 20px;
+}
+
+.project-status > p {
+  text-transform: uppercase;
+}
+
+.project-status > p:first-child {
+  margin: 0 0 0 auto;
+}
+
+.project-status > p:last-child {
+  margin: 0 auto 0 3px;
+}
+
+.project-action {
+  height: 50px;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  outline: 2px solud transparent;
+  scale: 1;
+  transition: scale 0.2s;
+}
+
+.project-action:hover:not(.action-disabled) {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  outline: 2px solid white;
+}
+
+.project-action:active:not(.action-disabled) {
+  scale: 0.95;
+}
+
+.project-panorama {
+  height: 100%;
+  width: 100%;
+}
+
+.project-panorama > div {
+  display: flex;
+}
+
+.project-panorama > div > img {
+  width: 100%;
+  height: 234px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.panorama-descr {
+  margin-top: 45px;
+}
+
+.panorama-descr > p {
+  margin: auto;
+  font-size: 25px;
+  font-family: "San Francisco";
+  text-align: center;
+}
+
+#skills-screen {
+  display: flex;
+}
+
+.skills-container {
+  display: flex;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.skills-front {
+  margin: 0 90px 0 0;
+}
+
+.skills-back {
+  margin: 0 0 0 90px;
+}
+
+.skills-wrapper {
+  margin-top: 40px;
+}
+
+.skills-wrapper > p {
+  display: inline;
+  margin: 40px 0 0 20px;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 20px;
+}
+
+.skills-section {
+  display: flex;
+  width: 100%;
+}
+
+.skills-section > h2 {
+  margin: auto;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.skill {
+  display: flex;
+  height: 70px;
+  margin: 20px 0;
+  border-radius: 20px;
+  border: 2px solid rgba(154, 153, 150, 0.28);
+  background: rgba(154, 153, 150, 0.07);
+  backdrop-filter: blur(10.5px);
+}
+
+.skill > p:not(.skill-status) {
+  width: 120px;
+  margin: auto 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.skill-separator {
+  height: 40px;
+  width: 2px;
+  margin: auto 0;
+  background-color: #383836;
+  border-radius: 2px;
+}
+
+.skill-progress {
+  height: 4px;
+  width: 327px;
+  margin: auto 10px;
+}
+
+.skill-progress-ready {
+  background: url("assets/SkillLevel.svg") 0 0 no-repeat;
+}
+
+.skill-progress-not-ready {
+  background: url("assets/SkillLevelNotReady.svg") 0 0 no-repeat;
+}
+
+.skill-progress > div:first-child {
+  height: 4px;
+  width: 327px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 102.02%);
+  border-radius: 4px;
+}
+
+.skill-progress > div:last-child {
+  height: 4px;
+  width: 325px;
+  position: relative;
+  margin-top: -4px;
+  border-top: 4px dashed white;
+  z-index: -1;
+}
+
+.skill-status {
+  width: 150px;
+  margin: auto 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+#contact-screen {
+  display: flex;
+}
+
+#contact-screen > div {
+  display: flex;
+  margin: auto;
+}
+
+#contact-screen > div >  form {
+  width: 610px;
+  margin: auto;
+}
+
+#contact-screen > div > form > h2 {
+  font-family: "San Francisco";
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+#contact-screen > div > form > input {
+  height: 60px;
+  width: calc(100% - 34px);
+  margin: 15px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  border: 2px solid rgba(154, 153, 150, 0.28);
+  background: rgba(154, 153, 150, 0.07);
+  font-size: 20px;
+  font-family: "San Francisco";
+  color: white;
+  backdrop-filter: blur(10.5px);
+}
+
+#contact-screen > div > form > input::placeholder, #contact-screen > div > form > textarea::placeholder {
+  color: #414141;
+  font-size: 20px;
+}
+
+#contact-screen > div > form > input:focus, #contact-screen > div > form > textarea:focus {
+  outline: 2px solid white;
+}
+
+#contact-screen > div > form > textarea {
+  height: calc(350px - 20px);
+  width: calc(100% - 34px);
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid rgba(154, 153, 150, 0.28);
+  background: rgba(154, 153, 150, 0.07);
+  font-size: 20px;
+  font-family: "San Francisco";
+  color: white;
+  backdrop-filter: blur(10.5px);
+}
+
+#contact-screen > div > form > div {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#contact-screen > div > form > div > input[type=submit] {
+  height: 50px;
+  width: 200px;
+  margin: auto;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-family: "San Francisco";
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+
+footer {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: #0f0f0f;
+}
+
+footer > p {
+  margin: auto;
+  font-family: "San Francisco";
+}
+
+.canvas {
+  position: absolute;
+  z-index: -1;
+}
+
+
+.status-green {
+  color: #37D42A;
+}
+.status-orange {
+  color: #D4862A;
+}
+.status-red {
+  color: #D42A2A;
+}
+
+.action-disabled {
+  background-color: #ccc;
+}

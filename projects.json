@@ -1,0 +1,153 @@
+{
+  "projects": [
+    {
+      "title": "Stylishh's Portfolio",
+      "description": "A portfolio written in pure JS using GSAP and ScrollMagic",
+      "status": "Complete",
+      "icon": "https://raw.githubusercontent.com/Qeatrix/StylishhPortfolio/main/assets/img/Icons/Site_Logo.svg",
+      "link": "https://qeatrix.github.io/StylishhPortfolio/",
+      "info": {}
+    },
+    {
+      "title": "ZPX64",
+      "description": "A social network designed for geeks only",
+      "status": "InDev",
+      "icon": "https://avatars.githubusercontent.com/u/150712506?s=400&u=5624081fb4ad24a5167e11a846a548cf77c6741d&v=4",
+      "link": "https://github.com/zpx64/supreme-octopus/",
+      "info": {}
+    },
+    {
+      "title": "Modern Experience",
+      "description": "A concept that turns the Minecraft interface into something completely new and different",
+      "status": "Deffered",
+      "icon": "https://raw.githubusercontent.com/Qeatrix/qntoverview/main/assets/icons/me_icon.svg",
+      "link": "null",
+      "info": {
+        "tasks": [
+          {
+            "name": "Develop Idea",
+            "status": "Done"
+          },
+          {
+            "name": "Learn Java Basics",
+            "status": "Done"
+          },
+          {
+            "name": "Learn Fabric API",
+            "status": "Active"
+          },
+          {
+            "name": "Write The Mod",
+            "status": "Incomplete"
+          },
+          {
+            "name": "Publish The Mod",
+            "status": "Incomplete"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Minecraft Session List",
+      "description": "A service that will store my Minecraft modpacks with control via web panel",
+      "status": "Deffered",
+      "icon": "https://raw.githubusercontent.com/Qeatrix/qntoverview/main/assets/icons/dev.svg",
+      "link": "null",
+      "info": {
+        "tasks": [
+          {
+            "name": "Implement Template Frontend",
+            "status": "Done"
+          },
+          {
+            "name": "Implement Backend",
+            "status": "Active"
+          },
+          {
+            "name": "Implement Core Frontend",
+            "status": "Incomplete"
+          },
+          {
+            "name": "Develop Frontend Design",
+            "status": "Incomplete"
+          },
+          {
+            "name": "Setup The Public Server",
+            "status": "Incomplete"
+          },
+          {
+            "name": "Upload & Host The Client",
+            "status": "Incomplete"
+          }
+        ]
+      }
+    },
+    {
+      "title": "WebWallpapers",
+      "description": "Wallpaper in Web interface built using [Client - Server - Repo] scheme",
+      "status": "InDev",
+      "icon": "https://raw.githubusercontent.com/Qeatrix/qntoverview/main/assets/icons/dev.svg",
+      "link": "null",
+      "info": {
+        "tasks": [
+          {
+            "name": "Create Repository",
+            "status": "Done"
+          },
+          {
+            "name": "Implement Backend",
+            "status": "Done"
+          },
+          {
+            "name": "Implement Core Frontend",
+            "status": "Done"
+          },
+          {
+            "name": "Develop Frontend Design",
+            "status": "Done"
+          },
+          {
+            "name": "Develop Frontend Animations",
+            "status": "Done"
+          },
+          {
+            "name": "Optimize Frontend Experience",
+            "status": "Active"
+          },
+          {
+            "name": "Setup The Public Server",
+            "status": "Incomplete"
+          },
+          {
+            "name": "Upload & Host The Client",
+            "status": "Incomplete"
+          }
+        ]
+      }
+    },
+    {
+      "title": "OpenSearch",
+      "description": "Your Custom Search Line",
+      "status": "Complete",
+      "icon": "https://raw.githubusercontent.com/Qeatrix/OpenSearch/main/img/logo_mini.svg",
+      "link": "https://qeatrix.github.io/OpenSearch/",
+      "info": {}
+    },
+    {
+      "title": "QuantumView",
+      "description": "A new modern look for firefox",
+      "status": "Outdated",
+      "icon": "https://raw.githubusercontent.com/Qeatrix/qntoverview/main/assets/icons/dev.svg",
+      "link": "https://github.com/Qeatrix/QuantumView/",
+      "info": {}
+    },
+    {
+      "title": "QuantumStart",
+      "description": "A new modern startpage for firefox",
+      "status": "Complete",
+      "icon": "https://qeatrix.github.io/QuantumStart/img/quantum.png",
+      "link": "https://qeatrix.github.io/QuantumStart/",
+      "info": {}
+    }
+  ]
+}
