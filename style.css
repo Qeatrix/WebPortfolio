@@ -113,6 +113,7 @@ header > div > a > button:hover:not(.active-header-button) {
 
 .headers-container {
   margin: auto;
+  user-select: none;
 }
 
 #welcome-screen > div > h1 {
